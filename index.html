@@ -1,9 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>JavaScript for Kids</title>
-  </head>
-  <body>
-    <script src="word-guess.js"></script>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://hangmanwordgame.com/static/img/hg-logo-16.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="container">
+         
+                <h1 > <img src="image.png" class="image"> &nbsp Hangman Game</h1> 
+              </div>
+              
+        <div class="column left">
+                <form action="">
+                <h2>Enter a Secret Word:</h2><br>
+                  <input type="text" placeholder="Secret word .." id="secret" name="place" autocomplete="off">
+                  
+              </form>  <br>
+              <button class="btn success" id="btn0" name="Start"> Start a Game</button>
+      </div>
+      <div class="column right">
+            <form action="">
+                   <h2>Guess Letter:</h2><br>
+                      <input type="text" placeholder="Guess letter .." id="guess" maxlength="1" name="place" autocomplete="off">
+            
+                  </form>  <br>
+                  <button class="btn success" id="btn">Guess</button><br>
+                  <div id="dashed"></div>   
+                  <h1 id="check"></h1>  
+                  <h1 id="err"></h1> 
+
+      </div>
+</body>
 </html>
