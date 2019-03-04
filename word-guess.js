@@ -47,7 +47,7 @@ window.onload=function()
             btn0.textContent="Play Again !";
             btn0.onclick=function()
             {
-              window.location="Gametask.html";
+              window.location="index.html";
             }
          
               check.innerHTML="You lose the Game !";
@@ -55,7 +55,7 @@ window.onload=function()
           }
           else
           {
-            if(secretWord.search(guessLetter)== -1 && word.indexOf("_ ") >= 0)
+            if(secretWord.search(guessLetter)== -1 && word.includes("_ ") >= 0)
             { 
                var space="  ";
               check.innerHTML="Wrong";
@@ -78,11 +78,11 @@ window.onload=function()
              }
              dashed.innerHTML=word;
              check.innerHTML="";
-             if( word.indexOf("_ ") <= 0 && chance >= 0)
+             if( word.includes("_ ") != true && chance >= 0)
                { btn0.textContent="Play Again !";
                btn0.onclick=function()
                {
-                 window.location="Gametask.html";
+                 window.location="index.html";
                }
                check.innerHTML="Congratulation You Win!";
                }
