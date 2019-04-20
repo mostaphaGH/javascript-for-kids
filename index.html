@@ -2,8 +2,29 @@
 <html>
   <head>
     <title>JavaScript for Kids</title>
+      <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+
   </head>
   <body>
-    <script src="word-guess.js"></script>
+      <!-- start navbar-->
+      <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" "><span >SecretWord</a>
+
+    </nav>
+      <!--end navbar-->
+      <center>
+      <div class="card w-50" style="margin-top: 100px;" id="myDiv" >
+  <div class="card-body">
+    <h5 class="card-title" id="result">Player 1, Enter your secret</h5>
+     <div id="m"> <input id="word" type="text"style="margin-bottom: 10px;"><br>
+    <a href="#" class="btn btn-danger" style="width:100px;" id="linkbtn" onclick="startgame()">Play</a></div><br><br><div id="mainbad"></div>
+  
+  </div>
+</div>
+      </center>
+    <script src="bootstrap.min.js"></script>
+          <script src="game-steps/final.js"></script>
+
   </body>
 </html>
